@@ -1,16 +1,11 @@
-function teste(){
-  var endereco = {
-    rua: "tamandaré",
-    numero: 91,
-    bairro: "liberdade",
-    cidade: "São Paulo",
-    uf: "SP"
-  }
-  return endereco
+var end = {
+  rua: "tamandaré",
+  numero: 91,
+  bairro: "liberdade",
+  cidade: "São Paulo",
+  uf: "SP"
 }
-var resultado = teste()
-console.log('O nosso amigo mora em ' + cidade + ' / ' + uf + ', no bairro' + bairro + ', na rua ' + rua + ' com o número ' + numero)
-
-
-
-
+function info(end){
+  return 'O nosso amigo mora em ' + end.cidade + ' / ' + end.uf + ', no bairro' + end.bairro + ', na rua ' + end.rua + ' com o número ' + end.numero
+}
+console.log(info(end))
