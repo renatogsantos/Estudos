@@ -3,8 +3,8 @@
 // }
 
 
-var j = 0
-while (j <= 100){
+var j = 1000000
+while (j >= 50){
   console.log(j);
-  j++
+  j /= 5
 }
